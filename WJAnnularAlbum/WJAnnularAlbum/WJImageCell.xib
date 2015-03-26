@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7525" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7516"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WJImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aHd-PF-RDu">
+                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aHd-PF-RDu" secondAttribute="bottom" id="8iQ-W1-AUt"/>
+                <constraint firstItem="aHd-PF-RDu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="90n-qA-eLp"/>
+                <constraint firstItem="aHd-PF-RDu" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZVl-Kz-uvF"/>
+                <constraint firstAttribute="trailing" secondItem="aHd-PF-RDu" secondAttribute="trailing" id="nBX-ca-6jb"/>
+            </constraints>
+            <connections>
+                <outlet property="imageView" destination="aHd-PF-RDu" id="azA-sS-SlV"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

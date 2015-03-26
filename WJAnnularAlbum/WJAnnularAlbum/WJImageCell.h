@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  WJImageCell.h
 //  WJAnnularAlbum
 //
 //  Created by Kevin on 15/3/21.
@@ -8,10 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface WJImageCell : UICollectionViewCell
 
-@property (strong, nonatomic) UIWindow *window;
-
+/** 单张图片名 */
+@property (copy, nonatomic) NSString *image;
 
 @end
-
